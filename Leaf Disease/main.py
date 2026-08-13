@@ -83,7 +83,7 @@ class LeafDiseaseDetector:
         ...     print("Healthy leaf detected")
     """
 
-    MODEL_NAME = "meta-llama/llama-4-scout-17b-16e-instruct"
+    MODEL_NAME = "qwen/qwen3.6-27b"
     DEFAULT_TEMPERATURE = 0.3
     DEFAULT_MAX_TOKENS = 1024
 
@@ -232,6 +232,8 @@ class LeafDiseaseDetector:
                 top_p=1,
                 stream=False,
                 stop=None,
+                response_format={"type": "json_object"},
+                reasoning_effort="none",
             )
 
             logger.info("API request completed successfully")
