@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 
 
-def test_api_endpoint(api_url: str = "http://localhost:8000"):
+def test_api_endpoint(api_url: str = "http://localhost:8001"):
     """Test the disease detection API endpoint (base64 and file upload)"""
     test_image = "Media/brown-spot-4 (1).jpg"
     if not Path(test_image).exists():
@@ -38,7 +38,7 @@ def test_api_endpoint(api_url: str = "http://localhost:8000"):
         print(f"Error (file upload endpoint): {str(e)}")
 
 
-def test_root_endpoint(api_url: str = "http://localhost:8000"):
+def test_root_endpoint(api_url: str = "http://localhost:8001"):
     """Test the root endpoint"""
     try:
         response = requests.get(f"{api_url}/")
@@ -55,7 +55,7 @@ if __name__ == "__main__":
     print("Leaf Disease Detection API Test")
     print("=" * 40)
 
-    api_url = "http://localhost:8000"
+    api_url = "http://localhost:8001"
 
     print("\n1. Testing root endpoint...")
     test_root_endpoint(api_url)

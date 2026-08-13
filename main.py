@@ -78,7 +78,7 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-api_url = os.environ.get("API_URL", "http://localhost:8000")
+api_url = os.environ.get("API_URL", "http://localhost:8001")
 
 col1, col2 = st.columns([1, 2])
 with col1:
