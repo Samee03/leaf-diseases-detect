@@ -117,7 +117,7 @@ html(
 
 steps_html = "".join(
     f"<div class='vl-step'><span class='num'>{i}</span><div class='icon'>{icon}</div>"
-    f"<h3>{title}</h3><p>{text}</p></div>"
+    f"<h3><a href='#detect' target='_self'>{title}</a></h3><p>{text}</p></div>"
     for i, (icon, title, text) in enumerate(STEPS, start=1)
 )
 html(f"<div class='vl-steps'>{steps_html}</div>")

@@ -53,7 +53,8 @@ h1, h2, h3, h4, .vl-display { font-family: 'Inter Tight', 'Inter', sans-serif !i
 
 /* Hide default Streamlit chrome */
 #MainMenu, header[data-testid="stHeader"], footer, [data-testid="stToolbar"],
-[data-testid="stDecoration"], [data-testid="stSidebarCollapsedControl"] { display: none !important; }
+[data-testid="stDecoration"], [data-testid="stSidebarCollapsedControl"],
+[data-testid="stHeaderActionElements"] { display: none !important; }
 .block-container { padding-top: 0 !important; padding-bottom: 0 !important; max-width: 1200px; }
 
 /* Header */
@@ -124,6 +125,9 @@ h1, h2, h3, h4, .vl-display { font-family: 'Inter Tight', 'Inter', sans-serif !i
 .vl-step .num { position: absolute; top: 1rem; right: 1.3rem; font-family: 'Inter Tight'; font-weight: 800; font-size: 2.2rem; color: #e6e6ec; }
 .vl-step .icon { font-size: 1.6rem; }
 .vl-step h3 { color: var(--vl-purple) !important; font-size: 1.25rem; margin: .8rem 0 .35rem; padding: 0; }
+.vl-step h3 a { color: var(--vl-purple) !important; text-decoration: none !important; }
+.vl-step h3 a:hover { color: var(--vl-green-dark) !important; text-decoration: underline !important; text-underline-offset: 4px; }
+html { scroll-behavior: smooth; }
 .vl-step p { color: var(--vl-muted); font-size: .95rem; margin: 0; line-height: 1.55; }
 
 /* Section headings */
