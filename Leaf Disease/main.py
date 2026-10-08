@@ -83,7 +83,7 @@ class LeafDiseaseDetector:
         ...     print("Healthy leaf detected")
     """
 
-    MODEL_NAME = "qwen/qwen3.6-27b"
+    MODEL_NAME = "qwen/qwen3.8-27b"
     DEFAULT_TEMPERATURE = 0.3
     DEFAULT_MAX_TOKENS = 1024
 
