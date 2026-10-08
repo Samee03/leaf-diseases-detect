@@ -22,4 +22,4 @@ requests>=2.31.0
 python-multipart
 
 # Frontend dependencies
-streamlit
+streamlit>=1.50.0
