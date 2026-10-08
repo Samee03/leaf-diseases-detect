@@ -55,6 +55,8 @@ h1, h2, h3, h4, .vl-display { font-family: 'Inter Tight', 'Inter', sans-serif !i
 #MainMenu, header[data-testid="stHeader"], footer, [data-testid="stToolbar"],
 [data-testid="stDecoration"], [data-testid="stSidebarCollapsedControl"],
 [data-testid="stHeaderActionElements"] { display: none !important; }
+/* Full-bleed sections use 100vw, which includes the vertical scrollbar width */
+.stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"] { overflow-x: hidden !important; }
 .block-container { padding-top: 0 !important; padding-bottom: 0 !important; max-width: 1200px; }
 
 /* Header */
@@ -62,7 +64,8 @@ h1, h2, h3, h4, .vl-display { font-family: 'Inter Tight', 'Inter', sans-serif !i
     display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
     padding: 1.1rem 0; border-bottom: 1px solid var(--vl-line); flex-wrap: wrap;
 }
-.vl-brand { display: flex; align-items: center; gap: .75rem; text-decoration: none !important; }
+.vl-brand { display: flex; align-items: center; gap: .75rem; }
+.vl-brand a { display: flex; align-items: center; text-decoration: none !important; }
 .vl-brand img { height: 52px; width: auto; }
 .vl-brand-product {
     font-family: 'Inter Tight', sans-serif; font-weight: 700; font-size: .95rem; color: var(--vl-green);
@@ -234,10 +237,10 @@ def page_header(active: str) -> None:
     html(
         f"""
         <div class="vl-nav">
-            <a class="vl-brand" href="./" target="_self">
-                <img src="{LOGO_URL}" alt="{COMPANY}">
-                <span class="vl-brand-product">AI Crop Advisor</span>
-            </a>
+            <div class="vl-brand">
+                <a href="{COMPANY_URL}" target="_blank" title="Visit {COMPANY}"><img src="{LOGO_URL}" alt="{COMPANY}"></a>
+                <a href="./" target="_self"><span class="vl-brand-product">AI Crop Advisor</span></a>
+            </div>
             <div class="vl-links">{links}</div>
             <a class="vl-btn vl-btn-green" href="{CONTACT_URL}" target="_blank">Talk to us</a>
         </div>
@@ -261,7 +264,7 @@ def page_footer() -> None:
         <div class="vl-footer">
             <div class="vl-footer-inner">
                 <div>
-                    <img src="{LOGO_URL}" alt="{COMPANY}">
+                    <a href="{COMPANY_URL}" target="_blank" title="Visit {COMPANY}"><img src="{LOGO_URL}" alt="{COMPANY}"></a>
                     <p>{COMPANY} is a next-generation software development company focused on
                     delivering innovative digital solutions. AI Crop Advisor is one of our
                     applied-AI products for agriculture.</p>
