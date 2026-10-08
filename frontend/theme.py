@@ -232,7 +232,7 @@ def page_header(active: str) -> None:
         <div class="vl-nav">
             <a class="vl-brand" href="./" target="_self">
                 <img src="{LOGO_URL}" alt="{COMPANY}">
-                <span class="vl-brand-product">Leaf Disease AI</span>
+                <span class="vl-brand-product">AI Crop Advisor</span>
             </a>
             <div class="vl-links">{links}</div>
             <a class="vl-btn vl-btn-green" href="{CONTACT_URL}" target="_blank">Talk to us</a>
@@ -259,7 +259,7 @@ def page_footer() -> None:
                 <div>
                     <img src="{LOGO_URL}" alt="{COMPANY}">
                     <p>{COMPANY} is a next-generation software development company focused on
-                    delivering innovative digital solutions. Leaf Disease AI is one of our
+                    delivering innovative digital solutions. AI Crop Advisor is one of our
                     applied-AI products for agriculture.</p>
                 </div>
                 <div>

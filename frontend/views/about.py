@@ -2,7 +2,7 @@ from frontend.theme import html, COMPANY_URL, CONTACT_EMAIL, page_footer, page_h
 
 page_header("about")
 page_hero(
-    "About <span class='vl-purple-text'>Leaf Disease</span> <span class='vl-green-text'>AI</span>",
+    "About AI Crop <span class='vl-green-text'>Advisor</span>",
     "Applied AI from Vibrant Logics to help growers spot plant disease early.",
 )
 
@@ -10,7 +10,7 @@ html(
     f"""
     <div class="vl-prose">
         <h2>What it does</h2>
-        <p>Leaf Disease AI analyzes a photo of a plant leaf and tells you whether it looks
+        <p>AI Crop Advisor analyzes a photo of a plant leaf and tells you whether it looks
         healthy or diseased. When it finds a problem, it names the likely disease and its
         category (fungal, bacterial, viral, pest or nutrient deficiency), estimates severity,
         lists the visible symptoms and probable causes, and suggests treatment steps.</p>

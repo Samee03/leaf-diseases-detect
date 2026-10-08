@@ -8,7 +8,7 @@ page_hero("Terms &amp; <span class='vl-green-text'>Conditions</span>", f"Effecti
 html(
     f"""
     <div class="vl-prose">
-        <p>These Terms &amp; Conditions ("Terms") govern your use of the Leaf Disease AI
+        <p>These Terms &amp; Conditions ("Terms") govern your use of the AI Crop Advisor
         application (the "Service") provided by {COMPANY} ("we", "us", "our"). By using the
         Service you agree to these Terms. If you do not agree, please do not use it.</p>
 

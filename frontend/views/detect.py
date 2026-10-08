@@ -107,7 +107,7 @@ page_header("home")
 html(
     """
     <div class="vl-hero">
-        <h1>AI Leaf Disease <span class="vl-green-text">Detection</span><br>
+        <h1>AI Crop <span class="vl-green-text">Advisor</span><br>
         for Healthier <span class="vl-green-text">Harvests</span></h1>
         <p>Upload a leaf photo and get an instant diagnosis, severity assessment
         and treatment plan, powered by vision AI.</p>

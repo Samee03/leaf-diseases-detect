@@ -9,7 +9,7 @@ html(
     f"""
     <div class="vl-prose">
         <p>This Privacy Policy explains how {COMPANY} ("we", "us", "our") handles information
-        when you use the Leaf Disease AI application (the "Service").</p>
+        when you use the AI Crop Advisor application (the "Service").</p>
 
         <h2>1. Information we collect</h2>
         <ul>
